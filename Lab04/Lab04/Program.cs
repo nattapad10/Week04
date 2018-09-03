@@ -6,8 +6,8 @@ namespace Lab04
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
-            Console.WriteLine("world");
+            Console.WriteLine("{1}, {0} and {1}", 3, 6);
+            
         }
     }
 }

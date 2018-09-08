@@ -6,25 +6,14 @@ namespace Lab04
     {
         static void Main(string[] args)
         {
-            bool A, B, Y;
-            Console.WriteLine("      Y = A XOR B ");
-            Console.WriteLine("-----------------------");
-            Console.WriteLine("   A      B\t|  Y");
-            Console.WriteLine("-----------------------");
-            A = false; B = false; Y = (A | B) & (!A | !B);
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            A = false; B = true; Y = (A | B) & (!A | !B);
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            A = true; B = false; Y = (A | B) & (!A | !B);
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            A = true; B = true; Y = (A | B) & (!A | !B);
-            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
-            Console.WriteLine("-----------------------");
-
+            int a, b, c, d, e, f;
+            a = 1;
+            b = a + 6;
+            c = b - 3;
+            d = c * 2;
+            e = d / 2;
+            f = e % 2;
             
-
-
-
             Console.ReadKey();
 
             

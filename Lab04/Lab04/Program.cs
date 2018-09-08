@@ -2,26 +2,23 @@
 
 namespace Lab04
 {
-    class Program
+    class MathTes
     {
         static void Main(string[] args)
         {
-            double a,b;
-           
-            Console.WriteLine("Input your distance of the sun");
-            a = Convert.ToDouble(Console.ReadLine());
-            a = a / 1.609344; //min
-            b = a;
-            a = a / 93000000; //au
-            b = b / 186000; //wi
-            b = b / 100;
-            Console.WriteLine("distance A.U. is {0}",a);
-            Console.WriteLine("distance light min is {0}",b);
-            Console.ReadKey();
-
-            
+            for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
+            {
+                Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" +
+                spaces(Math.Sin(i)) + "*", i, Math.Sin(i));
+            }
         }
-
+        private static string spaces(double val)
+        {
+            string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+            return SpaceString;
+        }
 
     }
 }
+    
+

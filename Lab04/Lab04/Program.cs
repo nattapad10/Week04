@@ -6,14 +6,25 @@ namespace Lab04
     {
         static void Main(string[] args)
         {
-            int a;
-            Random random = new Random();
-            int randomNumber = random.Next(0, 9);
-            Console.WriteLine(randomNumber);
-            Console.WriteLine("Input your nimber");
-            a = Convert.ToInt32(Console.ReadLine());         
-            bool b = a > randomNumber;
-            Console.WriteLine("{0}>{1} : {2}", a, randomNumber, b);
+            bool A, B, Y;
+            Console.WriteLine("      Y = A XOR B ");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = (A | B) & (!A | !B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = (A | B) & (!A | !B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = (A | B) & (!A | !B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = (A | B) & (!A | !B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+
+            
+
+
+
             Console.ReadKey();
 
             

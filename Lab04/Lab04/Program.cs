@@ -6,82 +6,17 @@ namespace Lab04
     {
         static void Main(string[] args)
         {
-            int a = 10, b = 20, x = 5, y = 2;
-            Double a1 = 0;
-            a1= a + b;
-            Console.WriteLine("..a + b....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = x - b;
-            Console.WriteLine("..x-b....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = x * b;
-            Console.WriteLine("..x*b....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = y / a;
-            Console.WriteLine("..y/a....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = b % y;
-            Console.WriteLine("..b%y....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = y + 10 % x;
-            Console.WriteLine("..y+10%x....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = a / 3 * 5;
-            Console.WriteLine("..a/3*5....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = 9 / 2 * a;
-            Console.WriteLine("..9/2*a....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = y % 8;
-            Console.WriteLine("..y%8....{0}", a1);
-
-            a = 10;
-            b = 20;
-            x = 5;
-            y = 2;
-            a1 = 0;
-            a1 = 100 * x + y % 2 - a;
-            Console.WriteLine("..100*x+y%2-a....{0}", a1);
+            double a,b;
+           
+            Console.WriteLine("Input your distance of the sun");
+            a = Convert.ToDouble(Console.ReadLine());
+            a = a / 1.609344; //min
+            b = a;
+            a = a / 93000000; //au
+            b = b / 186000; //wi
+            b = b / 100;
+            Console.WriteLine("distance A.U. is {0}",a);
+            Console.WriteLine("distance light min is {0}",b);
             Console.ReadKey();
 
             
